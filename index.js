@@ -28,10 +28,10 @@ const showData = (data) => {
         <h2>Weather in ${data.name}, ${data.sys.country}</h2> 
         <img src="${iconUrl}" alt="Weather icon">
         <p><span>Temperature:</span> ${data.main.temp}°C</p>
+        <p><span>Pressure:</span> ${data.main.pressure} hPa</p>
+        <p><span>Description:</span> ${data.weather[0].description}</p>
         <p><span>Humidity:</span> ${data.main.humidity}%</p>
         <p><span>Wind speed:</span> ${data.wind.speed} m/s</p>
-        <p><span>Pressure:</span> ${data.main.pressure} hPa</p>
-        <p><span>Weather:</span> ${data.weather[0].description}</p>
         <p><span>Direction of wind:</span> ${data.wind.deg}°</p>
         `;
 };
